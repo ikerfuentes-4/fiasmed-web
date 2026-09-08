@@ -6,9 +6,9 @@
   --ink: #1b2422;
   --paper: #faf8f3;
   --paper-warm: #f1ece1;
-  --teal: #00c2cb;
-  --teal-deep: #037b83;
-  --teal-tint: #e3f5f6;
+  --teal: #54c0e8;
+  --teal-deep: #146e90;
+  --teal-tint: #e7f6fc;
   --muted: #5c6660;
   --line: rgba(27, 36, 34, 0.13);
 }
@@ -145,11 +145,15 @@ img { display: block; max-width: 100%; }
 .recovery-step { display: block; color: var(--teal-deep); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 14px; }
 .recovery-row-copy h3 { margin: 0 0 14px; font-size: clamp(1.5rem, 2.4vw, 2.1rem); font-weight: 800; letter-spacing: -.01em; }
 .recovery-row-copy p { color: var(--muted); line-height: 1.6; max-width: 420px; margin: 0 0 22px; }
-.recovery-services { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; }
-.recovery-services li { padding: 14px 0; border-top: 1px solid var(--line); }
-.recovery-services strong { display: flex; align-items: center; gap: 6px; font-size: .92rem; font-weight: 700; }
-.recovery-services strong svg { color: var(--teal-deep); flex-shrink: 0; }
+.recovery-services { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; align-items: start; }
+.recovery-services li { border-top: 1px solid var(--line); align-self: start; }
+.recovery-services button { display: block; width: 100%; padding: 14px 0; border: 0; background: none; text-align: left; color: var(--ink); }
+.recovery-services strong { display: flex; align-items: center; gap: 6px; font-size: .92rem; font-weight: 700; transition: color .2s; }
+.recovery-services button:hover strong { color: var(--teal-deep); }
+.recovery-services strong svg { color: var(--teal-deep); flex-shrink: 0; transition: transform .25s; }
+.recovery-services li.is-open strong svg { transform: rotate(90deg); }
 .recovery-services span { display: block; margin-top: 5px; color: var(--muted); font-size: .8rem; font-weight: 400; line-height: 1.5; }
+.recovery-service-detail { overflow: hidden; margin: -6px 0 16px; color: var(--muted); font-size: .82rem; line-height: 1.6; }
 
 /* ---------- Techniques ---------- */
 .technique-section { padding: 100px 0; background: var(--paper-warm); }
