@@ -5,22 +5,70 @@ import { ArrowDown } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const techniques = [
-  { name: "Massatge terapèutic", text: "Manipulació manual per alleujar el dolor i reduir la tensió muscular." },
-  { name: "Punció seca", text: "Tractament del dolor muscular i els punts gallet miofascials amb agulles fines." },
-  { name: "Manipulació osteopàtica", text: "Teràpia manual global per restablir l'equilibri i la mobilitat del cos." },
-  { name: "Exercici terapèutic", text: "Moviment guiat i progressiu per recuperar força, control i funció." },
-  { name: "Neuromodulació", text: "Regulació directa de l'activitat nerviosa amb estímuls elèctrics controlats." },
-  { name: "Electropunció", text: "Agulles a punts estratègics combinades amb corrents elèctrics." },
-  { name: "Neurodinàmia SNP", text: "Mobilització del sistema nerviós perifèric per alliberar tensió neural." },
-  { name: "Ecografia", text: "Imatge en temps real per guiar el diagnòstic i el tractament amb precisió." },
-  { name: "Crioteràpia", text: "Exposició a temperatures molt baixes per reduir inflamació i dolor." },
-  { name: "Diatèrmia", text: "Calor profunda per tractar teixits musculoesquelètics en profunditat." },
-  { name: "Ones de xoc", text: "Polsos acústics extracorporis que estimulen la reparació dels teixits." },
-  { name: "Pressoteràpia", text: "Pressió d'aire controlada per millorar la circulació sanguínia i limfàtica." },
-  { name: "Parafina", text: "Calor superficial per relaxar articulacions i teixits tous." },
-  { name: "Ultrasò", text: "Vibració tèrmica dels teixits per afavorir-ne la recuperació." },
-  { name: "Magnetoteràpia", text: "Camps magnètics per estimular la regeneració dels teixits." },
-  { name: "Electroteràpia", text: "Corrents elèctrics (TENS, EMS) per treballar el sistema nerviós i muscular." },
+  {
+    name: "Massatge terapèutic",
+    text: "Manipulació manual que alleuja el dolor, redueix la tensió muscular i millora la circulació. A diferència d'un massatge relaxant, treballa problemes concrets: contractures, lesions esportives, dolor crònic i tensió postural.",
+  },
+  {
+    name: "Punció seca",
+    text: "Introducció d'una agulla fina en punts concrets del múscul per alliberar contractures profundes i punts gallet. Redueix el dolor de forma immediata i millora la mobilitat i la circulació de la zona tractada.",
+  },
+  {
+    name: "Manipulació osteopàtica",
+    text: "Teràpia manual estructural, visceral i craniana per alleujar el dolor muscular i articular, millorar la postura, reduir l'estrès i equilibrar el sistema nerviós. També ajuda amb problemes digestius i mal de cap.",
+  },
+  {
+    name: "Exercici terapèutic",
+    text: "Moviments i exercicis específics, guiats i progressius, per tractar, prevenir i rehabilitar lesions, recuperant força, control i funció.",
+  },
+  {
+    name: "Neuromodulació",
+    text: "Estímuls elèctrics de baixa intensitat sobre nervis o músculs, de forma percutània o no, per reduir el dolor crònic, recuperar el control motor i trencar patrons de dolor persistent.",
+  },
+  {
+    name: "Electropunció",
+    text: "Combina l'acupuntura amb estimulació elèctrica de baixa intensitat: agulles fines connectades a corrents controlats que potencien l'efecte analgèsic i neuromuscular de la punció seca. La sensació és una contracció lleu, no dolorosa.",
+  },
+  {
+    name: "Neurodinàmia SNP",
+    text: "Examina com es mouen els nervis dins dels teixits i com les restriccions d'aquest moviment poden causar dolor i disfunció, per alliberar tensió del sistema nerviós perifèric.",
+  },
+  {
+    name: "Ecografia",
+    text: "Imatge no invasiva amb ones d'ultrasò per visualitzar múscul i teixits tous en temps real, guiant el diagnòstic i la precisió del tractament.",
+  },
+  {
+    name: "Crioteràpia",
+    text: "Fred aplicat de forma controlada, local o general, per reduir inflamació, dolor i sensibilitat nerviosa en lesions agudes, postoperatoris i recuperació esportiva.",
+  },
+  {
+    name: "Diatèrmia",
+    text: "Corrents d'alta freqüència que generen calor profunda als teixits: redueixen dolor i inflamació, acceleren la curació i milloren la mobilitat, de forma indolora i molt segura.",
+  },
+  {
+    name: "Ones de xoc",
+    text: "Ones acústiques d'alta intensitat que activen la circulació, estimulen la regeneració cel·lular i trenquen calcificacions o adherències, amb resultats visibles en poques sessions.",
+  },
+  {
+    name: "Pressoteràpia",
+    text: "Pressió d'aire controlada per millorar la circulació sanguínia i limfàtica, reduint la inflor i afavorint la recuperació.",
+  },
+  {
+    name: "Parafina",
+    text: "Calor superficial que s'aplica fosa sobre la pell per hidratar-la en profunditat i relaxar articulacions i teixits tous.",
+  },
+  {
+    name: "Ultrasò",
+    text: "Ones sonores d'alta freqüència que generen efecte tèrmic i mecànic als teixits profunds, alleujant el dolor i accelerant la recuperació de manera indolora.",
+  },
+  {
+    name: "Magnetoteràpia",
+    text: "Camps magnètics estàtics o polsants que estimulen els teixits i les cèl·lules del cos per afavorir-ne la regeneració.",
+  },
+  {
+    name: "Electroteràpia",
+    text: "Corrents elèctrics (TENS, EMS) que actuen sobre el sistema nerviós i muscular per reduir el dolor i potenciar la funció.",
+  },
 ];
 
 export function Techniques() {

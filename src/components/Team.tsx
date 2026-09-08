@@ -25,7 +25,13 @@ export function Team() {
         <Reveal delay={0.06} className="team-grid">
           {team.map((member) => (
             <Link className="team-member" href={`/equip/${member.slug}`} key={member.slug}>
-              <img className="team-photo" src={member.photo} alt={member.name} loading="lazy" />
+              <img
+                className="team-photo"
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                style={member.photoPosition ? { objectPosition: member.photoPosition } : undefined}
+              />
               <div>
                 <span className="team-name-button">{member.name}</span>
                 <p>{member.role}</p>

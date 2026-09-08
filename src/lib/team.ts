@@ -4,6 +4,8 @@ export type TeamMember = {
   role: string;
   initials: string;
   photo: string;
+  /** CSS object-position for the small grid crop; defaults to "center 10%" when omitted. */
+  photoPosition?: string;
   credential: string;
   detail: string;
   education: string[];
@@ -37,7 +39,7 @@ export const team: TeamMember[] = [
   },
   {
     slug: "edu-sogues", name: "Edu Sogues", role: "Fisioterapeuta", initials: "ES",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/d482e320-7514-4145-997a-21c8d643fd4a/5+%281%29.png?format=1000w", credential: "Col. 9191",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/d482e320-7514-4145-997a-21c8d643fd4a/5+%281%29.png?format=1000w", photoPosition: "center 63%", credential: "Col. 9191",
     detail: "Fisioterapeuta especialitzat en exercici terapèutic, dolor, articulació temporomandibular i tractament del síndrome de dolor miofascial.",
     education: ["Exercici terapèutic i dolor.", "Tècniques manipulatives i miotensives.", "Valoració i tractament de l'ATM.", "Fisioteràpia conservadora i invasiva del síndrome de dolor miofascial.", "Acupuntura zonal.", "Mètode POLD.", "Neurodinàmica i mobilitzacions del sistema nerviós perifèric.", "Quiromassatge."],
   },
