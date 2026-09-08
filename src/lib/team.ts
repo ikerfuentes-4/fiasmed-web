@@ -31,7 +31,7 @@ export const team: TeamMember[] = [
   },
   {
     slug: "laia-munoz", name: "Laia Muñoz", role: "Fisioterapeuta i osteòpata", initials: "LM",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/16fb28fe-a6e2-421d-b5f3-3c654fd9cccc/IMG_4254.JPG?format=1000w", credential: "Col. 6522",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/6828863a-5e07-4f79-ad09-c703f81a67c6/4+%281%29+%281%29.png?format=1000w", credential: "Col. 6522",
     detail: "Fisioterapeuta i osteòpata amb una mirada clínica àmplia, especialment vinculada al raquis, l'ATM, la ginecologia i l'ecografia.",
     education: ["Diplomatura de Fisioteràpia a la Universitat Ramon Llull.", "Introducció al mètode Feldenkrais.", "Reequilibració neuromotriu del raquis.", "Osteòpata C.O. per l'Escola d'Osteopatia de Barcelona (E.O.B.).", "Abordatge clínic i terapèutic del pacient vertiginós i inestable.", "Endocrinologia en ginecologia a l'Escola E.C.O. Barcelona.", "Enfocament osteopàtic dels trastorns de l'ATM a l'E.O.B. Barcelona.", "Formació continuada en obstetrícia a ECO Barcelona.", "Fisioteràpia i osteopatia uroginecològica.", "Ecografia."],
   },
@@ -43,13 +43,13 @@ export const team: TeamMember[] = [
   },
   {
     slug: "laia-vernet", name: "Laia Vernet", role: "Fisioterapeuta de sòl pelvià", initials: "LV",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/18fc3e15-ca6b-41b2-9dc4-5a727223872e/1.png?format=1000w", credential: "Col. 8389",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/cdc23d62-9d70-423a-bc2d-878ebdc83afc/6+%281%29.png?format=1000w", credential: "Col. 8389",
     detail: "Fisioterapeuta especialitzada en sòl pelvià, ginecologia, obstetrícia, salut de la dona, embaràs, postpart i lactància.",
     education: ["Màster en Entrenament, Nutrició i Salut de la Dona (ENFAF).", "Diplomatura en Fisioteràpia per la Universitat Ramon Llull - Blanquerna.", "Postgrau de Fisioteràpia en Ginecologia i Obstetrícia per la Universitat Europea de Madrid.", "Curs de Peripart a l'Escola Universitària Gimbernat.", "Curs d'abdominals, respiració i postura segons el concepte Mézières.", "Experta en somatitzacions pel mètode FISOMÁTICA.", "Fisioteràpia en pelviperineologia (SEFIP).", "Teràpia manual i tractament del dolor pèlvic crònic.", "Fisioteràpia en l'embaràs i el postpart, lactància i nutrició del nadó.", "Tractament de punts gallet i punció seca."],
   },
   {
     slug: "lucia-bernuz", name: "Lucía Bernuz", role: "Fisioterapeuta, osteòpata i osteòpata pediàtrica", initials: "LB",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/5b33f22e-c613-4cac-8e89-1d5a4141f7c7/6+%281%29+%281%29.png?format=1000w", credential: "Col. 9556",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/18fc3e15-ca6b-41b2-9dc4-5a727223872e/1.png?format=1000w", credential: "Col. 9556",
     detail: "Fisioterapeuta i osteòpata especialitzada en dolor crònic, teràpia fascial, cicatrius, postoperatoris, ATM, sistema digestiu i atenció pediàtrica.",
     education: ["Diplomada en Fisioteràpia per la Universitat Rey Juan Carlos I de Madrid.", "CO i màster en Osteopatia Estructural per l'Escola d'Osteopatia de Madrid (EOM).", "Tècnica Superior en Animació d'Activitats Físic Esportives (TAFAD).", "Curs SNA Integratiu i Dolor Crònic.", "Tècniques de mobilització fascial i punció seca.", "Pilates sòl.", "Experta en el mètode Fisiomàtica i somatitzacions.", "Teràpia fascial, dolor crònic i osteopatia especialitzada en dolor somàtic.", "Especialitzada en cicatrius, postoperatori, ATM i disfuncions del sistema digestiu.", "Osteopatia pediàtrica: son, còlics del lactant, succió, plagiocefàlies i torticoli."],
   },
@@ -67,7 +67,7 @@ export const team: TeamMember[] = [
   },
   {
     slug: "luisa-leizeriuc", name: "Luisa Leizeriuc", role: "Psicòloga", initials: "LL",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/6828863a-5e07-4f79-ad09-c703f81a67c6/4+%281%29+%281%29.png?format=1000w", credential: "COPC 33106",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/3a29af55-3c5e-4193-b1fa-5e1984e6e17b/_26A6055EQ.jpg?format=1000w", credential: "COPC 33106",
     detail: "Psicòloga general sanitària especialitzada en benestar emocional, autoestima, ansietat, relacions i processos migratoris.",
     education: ["Grau en Psicologia per la Universitat Oberta de Catalunya.", "Màster en Psicologia General Sanitària per la Universitat Internacional de València.", "Formació en Psicologia de la Migració.", "Especialista en depressió, autoestima, ansietat, problemes de parella i migració.", "Atén en català, castellà, anglès i romanès."],
   },

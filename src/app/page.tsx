@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { HumanStrip } from "@/components/HumanStrip";
 import { WhatHappensSection } from "@/components/BodyMap";
 import { RecoverySystem } from "@/components/RecoverySystem";
+import { Techniques } from "@/components/Techniques";
 import { FirstVisit } from "@/components/FirstVisit";
 import { Team } from "@/components/Team";
 import { Contact } from "@/components/Contact";
@@ -17,6 +18,7 @@ export default function Home() {
         <HumanStrip />
         <WhatHappensSection />
         <RecoverySystem />
+        <Techniques />
         <FirstVisit />
         <Team />
         <Contact />

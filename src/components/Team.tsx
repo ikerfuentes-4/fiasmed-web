@@ -4,9 +4,6 @@ import { team } from "@/lib/team";
 import { Reveal } from "./Reveal";
 
 export function Team() {
-  const founder = team[0];
-  const rest = team.slice(1);
-
   return (
     <section id="equip" className="team-section">
       <div className="container">
@@ -25,31 +22,16 @@ export function Team() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.05}>
-          <Link className="team-feature" href={`/equip/${founder.slug}`}>
-            <img src={founder.photo} alt={founder.name} />
-            <span>
-              <small>{founder.role}</small>
-              <strong>{founder.name}</strong>
-              <em>
-                Coneix la persona que va fer néixer Fiasmed <ArrowUpRight size={17} />
-              </em>
-            </span>
-          </Link>
-        </Reveal>
-
-        <Reveal delay={0.08} className="team-grid">
-          {rest.map((member) => (
-            <article className="team-member" key={member.slug}>
-              <img className="team-photo" src={member.photo} alt={member.name} />
+        <Reveal delay={0.06} className="team-grid">
+          {team.map((member) => (
+            <Link className="team-member" href={`/equip/${member.slug}`} key={member.slug}>
+              <img className="team-photo" src={member.photo} alt={member.name} loading="lazy" />
               <div>
-                <Link className="team-name-button" href={`/equip/${member.slug}`}>
-                  {member.name}
-                </Link>
+                <span className="team-name-button">{member.name}</span>
                 <p>{member.role}</p>
               </div>
               <ArrowUpRight size={17} />
-            </article>
+            </Link>
           ))}
         </Reveal>
       </div>

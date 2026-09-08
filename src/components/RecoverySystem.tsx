@@ -13,7 +13,16 @@ const stages = [
     title: "Escoltar abans d'actuar.",
     text: "Una valoració personalitzada és el primer pas. Parlem del que notes, no només del que es veu en una prova.",
     photo: media.handsTreatment2,
-    services: ["Fisioteràpia especialitzada", "Podologia"],
+    services: [
+      {
+        name: "Fisioteràpia especialitzada",
+        text: "Tractaments adaptats a cada pacient, especialitzats en lesions complexes i trastorns musculoesquelètics.",
+      },
+      {
+        name: "Podologia esportiva i infantil",
+        text: "Diagnòstic i tractament del peu, amb estudi biomecànic de la trepitjada inclòs.",
+      },
+    ],
   },
   {
     step: "02",
@@ -21,7 +30,20 @@ const stages = [
     title: "Un pla que es mou amb tu.",
     text: "Tècniques avançades i exercici guiat, sempre triats segons el teu cas i el teu moment.",
     photo: media.therapeuticExercise,
-    services: ["Fisioteràpia esportiva", "Sòl pelvià", "Readaptació esportiva"],
+    services: [
+      {
+        name: "Fisioteràpia esportiva",
+        text: "Prevenció, tractament i rehabilitació de lesions derivades de la pràctica esportiva.",
+      },
+      {
+        name: "Sòl pelvià",
+        text: "Prevenció i tractament de disfuncions de la zona pèlvica: embaràs, postpart i dolor crònic.",
+      },
+      {
+        name: "Readaptació esportiva",
+        text: "El procés especialitzat que es fa després d'una lesió per tornar a entrenar amb seguretat.",
+      },
+    ],
   },
   {
     step: "03",
@@ -29,7 +51,12 @@ const stages = [
     title: "Tornar a fer allò que t'importa.",
     text: "L'objectiu no és el tractament, és el que faràs després: córrer, jugar, entrenar, viure sense pensar-hi.",
     photo: media.sportsPhysio,
-    services: ["Entrenament personal"],
+    services: [
+      {
+        name: "Entrenament personal",
+        text: "Un enfocament individualitzat de l'exercici físic, dissenyat per als teus objectius.",
+      },
+    ],
   },
 ];
 
@@ -70,8 +97,13 @@ export function RecoverySystem() {
                   <p>{item.text}</p>
                   <ul className="recovery-services">
                     {item.services.map((service) => (
-                      <li key={service}>
-                        {service} <ArrowUpRight size={14} />
+                      <li key={service.name}>
+                        <div>
+                          <strong>
+                            {service.name} <ArrowUpRight size={14} />
+                          </strong>
+                          <span>{service.text}</span>
+                        </div>
                       </li>
                     ))}
                   </ul>
