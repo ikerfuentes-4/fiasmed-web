@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, MessageCircle } from "lucide-react";
 import { team } from "@/lib/team";
+import { media } from "@/lib/media";
 
 export function generateStaticParams() {
   return team.map((member) => ({ slug: member.slug }));
@@ -27,7 +28,7 @@ export default async function TeamMemberPage({ params }: { params: Promise<{ slu
 
   return (
     <main className="profile-page">
-      <div className="profile-topbar"><Link className="profile-brand" href="/"><img src="https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/4c6acc18-bb1c-419f-93dc-91e313f16eb5/FISIO+FIASMED+BLACK+%28Sin+fondo%29.png?format=500w" alt="Fisio Fiasmed" /></Link><Link className="profile-back" href="/#equip"><ArrowLeft size={16} /> Tornar a l'equip</Link></div>
+      <div className="profile-topbar"><Link className="profile-brand" href="/"><img src={media.logoBlack} alt="Fisio Fiasmed" /></Link><Link className="profile-back" href="/#equip"><ArrowLeft size={16} /> Tornar a l'equip</Link></div>
       <section className="profile-hero">
         <div className="profile-photo-wrap"><img className="profile-photo" src={member.photo} alt={member.name} /></div>
         <div className="profile-intro"><p className="eyebrow">Coneix l'equip</p><h1>{member.name}</h1><p className="profile-role">{member.role}</p><p className="profile-credential">{member.credential}</p><div className="profile-rule" /></div>
