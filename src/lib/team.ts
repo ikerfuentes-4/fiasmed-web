@@ -15,13 +15,14 @@ export const team: TeamMember[] = [
   {
     slug: "andrea-artero", name: "Andrea Artero", role: "CEO i fundadora", initials: "AA",
     photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/6f994339-9730-4587-b316-a4408e96e6ec/4.png?format=1000w",
+    photoPosition: "center 20%",
     credential: "Fundadora de Fiasmed",
     detail: "Fiasmed neix de la meva passió per la salut, l'esport i, sobretot, per ajudar les persones a sentir-se millor. Sempre he cregut que darrere de cada lesió, cada dolor i cada objectiu hi ha una persona amb una història diferent. Per això, Fiasmed és un espai on les persones se senten escoltades, acompanyades i en bones mans. El projecte uneix fisioteràpia, moviment, entrenament i benestar amb un objectiu clar: ajudar cada persona a recuperar-se, cuidar-se, sentir-se més forta i gaudir d'una millor qualitat de vida.",
     education: ["Proximitat, tracte humà, professionalitat i confiança són els pilars de Fiasmed.", "Mou-te. Cuida't. Viu millor."],
   },
   {
     slug: "aleix-cirera", name: "Aleix Cirera", role: "Fisioterapeuta", initials: "AC",
-    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/23dfb06f-19c7-4953-bff0-07cb26974c8f/6.png?format=1000w", credential: "Col. 15083",
+    photo: "https://images.squarespace-cdn.com/content/v1/6669be4bac1525229465036e/23dfb06f-19c7-4953-bff0-07cb26974c8f/6.png?format=1000w", photoPosition: "center 22%", credential: "Col. 15083",
     detail: "Fisioterapeuta especialitzat en fisioteràpia invasiva, ecografia musculoesquelètica, neuromodulació, electroneuroacupuntura, punció seca, columna, pelvis i readaptació esportiva.",
     education: ["Grau en Fisioteràpia per la Universitat de Vic.", "Grau en Ciències de l'Activitat Física i l'Esport per la Universitat de Vic.", "Postgrau en Fisioteràpia Invasiva impartit per Fisiocross Academy.", "Curs bàsic d'ecografia musculoesquelètica impartit per Fisiofocus.", "Neuromodulació ecoguiada impartida per Gerard Berenguer.", "Curs d'electroneuroacupuntura impartit per Juan Miñano.", "Curs de punció seca impartit per Fisioformación (nº2585).", "Curs de teràpia manual de columna i pelvis impartit per Fisiofocus.", "Curs de tendinopaties de membre inferior impartit per Qeres Formación.", "Curs d'Estabilització Dinàmica Global I-II (DNS) impartit per l'Escola de Praga.", "Curs de biomecànica avançada del peu i la marxa impartit per Reevolution Athletics.", "Curs de sistemes energètics impartit per Reevolution Athletics.", "Curs d'entrenament de la velocitat absoluta impartit per EXOS."],
   },

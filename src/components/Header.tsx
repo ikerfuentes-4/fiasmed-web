@@ -1,31 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { media } from "@/lib/media";
 
 const WHATSAPP = "https://wa.me/34647479968";
 
 const links = [
-  { href: "#humans", label: "Qui som" },
-  { href: "#que-et-passa", label: "Què et passa?" },
-  { href: "#recuperacio", label: "Serveis" },
-  { href: "#equip", label: "L'equip" },
+  { href: "/#humans", label: "Qui som" },
+  { href: "/#que-et-passa", label: "Què et passa?" },
+  { href: "/#recuperacio", label: "Serveis" },
+  { href: "/#tecniques", label: "Tècniques" },
+  { href: "/#equip", label: "L'equip" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="site-header">
+    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="container header-inner">
-        <a href="#inici" className="brand" aria-label="Fisio Fiasmed, inici">
+        <Link href="/#inici" className="brand" aria-label="Fisio Fiasmed, inici">
           <img src={media.logoBlack} alt="Fisio Fiasmed" />
-        </a>
+        </Link>
         <nav className="desktop-nav">
           {links.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link key={link.href} href={link.href}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <a className="header-cta" href={WHATSAPP} target="_blank" rel="noreferrer">
@@ -44,9 +55,9 @@ export function Header() {
       {open && (
         <nav className="mobile-nav container">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
           <a href={WHATSAPP} target="_blank" rel="noreferrer">
             Reservar visita <ArrowUpRight size={16} />
