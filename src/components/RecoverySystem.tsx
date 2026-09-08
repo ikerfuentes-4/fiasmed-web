@@ -19,8 +19,16 @@ const stages = [
         text: "Tractaments adaptats a cada pacient, especialitzats en lesions complexes i trastorns musculoesquelètics.",
       },
       {
-        name: "Podologia esportiva i infantil",
-        text: "Diagnòstic i tractament del peu, amb estudi biomecànic de la trepitjada inclòs.",
+        name: "Estudi biomecànic de la trepitjada",
+        text: "Un petit desequilibri en com trepitges pot generar dolor a genolls, malucs o esquena; l'analitzem des de l'arrel.",
+      },
+      {
+        name: "Podologia esportiva",
+        text: "Prevenció, diagnòstic i tractament de lesions al peu relacionades amb la pràctica esportiva.",
+      },
+      {
+        name: "Podologia infantil",
+        text: "Cura especialitzada dels peus dels més petits, des dels primers passos.",
       },
     ],
   },
@@ -40,8 +48,28 @@ const stages = [
         text: "Prevenció i tractament de disfuncions de la zona pèlvica: embaràs, postpart i dolor crònic.",
       },
       {
-        name: "Readaptació esportiva",
-        text: "El procés especialitzat que es fa després d'una lesió per tornar a entrenar amb seguretat.",
+        name: "Fisioteràpia per a embarassades",
+        text: "Dolor lumbar, cames cansades, canvis posturals: t'acompanyem durant tot l'embaràs.",
+      },
+      {
+        name: "Rehabilitació d'accidents de trànsit",
+        text: "Tractament personalitzat amb seguiment per recuperar-te d'un accident i evitar seqüeles futures.",
+      },
+      {
+        name: "Rehabilitacions clíniques",
+        text: "Recuperació de la funcionalitat i la qualitat de vida després de lesions, malalties o cirurgies.",
+      },
+      {
+        name: "Fisioteràpia traumatològica",
+        text: "Tractament i recuperació de lesions musculoesquelètiques, agudes i cròniques.",
+      },
+      {
+        name: "Fisioteràpia a domicili",
+        text: "El millor tractament des de la comoditat de casa teva, quan desplaçar-te és difícil.",
+      },
+      {
+        name: "Diatèrmia Medestec",
+        text: "Calor profunda amb tecnologia Medestec per reduir dolor i inflamació i accelerar la recuperació.",
       },
     ],
   },
@@ -53,8 +81,16 @@ const stages = [
     photo: media.sportsPhysio,
     services: [
       {
+        name: "Readaptació esportiva",
+        text: "El procés especialitzat que es fa després d'una lesió per tornar a entrenar amb seguretat.",
+      },
+      {
         name: "Entrenament personal",
         text: "Un enfocament individualitzat de l'exercici físic, dissenyat per als teus objectius.",
+      },
+      {
+        name: "Fisio estètica",
+        text: "Combina tècniques terapèutiques i estètiques per millorar la salut i l'aparença del cos.",
       },
     ],
   },
