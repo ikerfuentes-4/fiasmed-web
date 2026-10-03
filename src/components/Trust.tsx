@@ -17,7 +17,7 @@ export function Trust() {
           <a className="trust-google" href={GOOGLE_REVIEWS_URL} target="_blank" rel="noreferrer">
             <span className="trust-stars" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={15} fill="currentColor" strokeWidth={0} />
+                <Star key={i} size={15} fill="#fff" stroke="var(--ink)" strokeWidth={1.25} />
               ))}
             </span>
             <strong>
