@@ -1,0 +1,9 @@
+{
+  // Configuració de Cloudflare Pages per a l'export estàtic de Next.js.
+  // La web es genera amb `npm run build` a la carpeta `out/` (fitxers
+  // estàtics purs), que és el que Cloudflare Pages publica directament.
+  // No fem servir OpenNext ni Workers: no hi ha servidor/SSR.
+  "name": "fiasmed-web",
+  "compatibility_date": "2025-10-03",
+  "pages_build_output_dir": "out"
+}
